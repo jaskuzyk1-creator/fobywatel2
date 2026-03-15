@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tworzenie profilu</title>
+</head>
+<body>
+
+<h1>Utwórz profil</h1>
+
+<input id="nick" placeholder="Nick"><br><br>
+<input id="wiek" placeholder="Wiek"><br><br>
+
+<button onclick="stworz()">Stwórz stronę</button>
+
+<script>
+function stworz() {
+let nick = document.getElementById("nick").value;
+let wiek = document.getElementById("wiek").value;
+
+let url = "profil.html?nick=" + nick + "&wiek=" + wiek;
+window.location.href = url;
+}
+</script>
+
+</body>
+</html>
