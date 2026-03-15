@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Profil</title>
+</head>
+<body>
+
+<h1>Profil użytkownika</h1>
+
+<p id="nick"></p>
+<p id="wiek"></p>
+
+<script>
+let params = new URLSearchParams(window.location.search);
+
+document.getElementById("nick").innerText = "Nick: " + params.get("nick");
+document.getElementById("wiek").innerText = "Wiek: " + params.get("wiek");
+</script>
+
+</body>
+</html>
